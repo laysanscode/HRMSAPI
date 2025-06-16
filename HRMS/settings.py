@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-9c-(ak#$!#8a!nb3*0vqs@*k4^_m_3ly4=tqmxqlu1ejlwoolh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://hrmsapi-kw7c.onrender.com',
+   'localhost', 
+    '127.0.0.1', 
+]
 
 
 # Application definition
@@ -37,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'restframework',
-    'coreheaders',
+    'rest_framework',
+     'corsheaders',
     'rest_framework_simplejwt',
     'Login',
     'Payslip',
