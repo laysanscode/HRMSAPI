@@ -10,3 +10,12 @@ class HRSerializer(serializers.ModelSerializer):
      class Meta:
         model = HR
         fields = '__all__' 
+
+class DepartmentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Department
+        fields='__all__'
+
+
+class Userlogin(serializers.Serializer):
+    
